@@ -1,0 +1,228 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    color: black;
+    background-color: rgb(245, 217, 190);
+    font-family: Tahoma, Arial, Georgia;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: 65px;
+    background-image: linear-gradient(181deg, rgb(231, 179, 88), rgb(245, 217, 190));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header-img {
+    height: 40px;
+    width: max(150px, 12vw);
+    margin-left: 15px;
+}
+
+#nav-bar {
+    width: 70%;
+    max-width: 1000px;
+    height: 65px;
+    margin: 0;
+}
+
+#nav-bar>ul {
+    height: 65px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+}
+
+.nav-link,
+li {
+    color: rgb(110, 74, 1);
+    padding: 4px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: rgb(110, 74, 1);
+    color: rgb(231, 179, 88);
+    cursor: pointer;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+#wooden {
+    padding-top: 65px;
+    font-family: Brush Script MT;
+    font-size: 4rem;
+    color: rgb(110, 74, 1);
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0 30px;
+    word-spacing: 8px;
+    text-align: justify;
+}
+
+#content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(500px, 700px) 500px;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #eeeeee url(https://github.com/Andrii1978/Wooden/blob/main/free-icon-play-6695716.png?raw=true)no-repeat center;
+    background-size: 20%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+}
+
+#prising {
+    padding-top: 65px;
+    padding-left: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.positions {
+    width: 150px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: rgb(252, 245, 245);
+    border: 2px solid black;
+}
+
+.positions>p {
+    padding: 0;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    text-align: center;
+}
+
+.positions p:first-child {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.positions p:nth-child(2) {
+    margin: -5 0 0 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.positions p:nth-child(4) {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.positions p:nth-child(5) {
+    margin: -5 0 0 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.positions p:last-child {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+hr {
+    margin: 8px 5px;
+
+}
+
+#form,
+#form p {
+    font-weight: 600;
+    text-align: center;
+}
+
+section {
+    margin: 10px auto;
+}
+
+section input {
+    font-size: 15px;
+    width: 30%;
+    text-align: left;
+}
+
+#submit {
+    display: block;
+    margin: 30px auto;
+    width: 30%;
+    padding: 6px;
+    font-size: 20px;
+    color: rgb(110, 74, 1);
+    background: rgb(245, 217, 190);
+    border: 3px solid rgb(110, 74, 1);
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(110, 74, 1);
+    background-image: linear-gradient(181deg, rgb(245, 217, 190), rgb(231, 179, 88));
+}
+
+address {
+    padding: 0.7em;
+}
